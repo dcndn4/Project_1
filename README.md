@@ -1,8 +1,11 @@
 # Project_1
 ## Pandas & PyViz
 Alex Amon
+
 Claire Stokes
+
 Steve Olsen
+
 Sylvia Fan
 
 ### Bitcoin and Ethereum correlation 
@@ -19,11 +22,37 @@ Our groups data has shown a close correlation between BTC and ETH. One that the 
 
 ![prices](./images/BTCETH.png) 
 
+```python
+merged_BTCETH["ETH_norm"]=merged_BTCETH["ETHUSD"] / merged_BTCETH["ETHUSD"].abs().max()
+```
+
+| Date       | BTCUSD | ETHUSD | BTC_norm | ETH_norm |
+|------------|--------|--------|----------|----------|
+| 2016-10-14 | 638.03 | 11.92  | 0.010034 | 0.002852 |
+| 2016-10-15 | 638.16 | 11.95  | 0.010036 | 0.002859 |
+| 2016-10-16 | 641.92 | 11.95  | 0.010095 | 0.002859 |
+| 2016-10-17 | 639.56 | 11.96  | 0.010058 | 0.002861 |
+| 2016-10-18 | 635.11 | 12.54  | 0.009988 | 0.003000 |
+
 ### Can I diversify between just these two cryptocurrencies? 
 
 All investors should note that our data shows that trying to diversify your crypto investments between just these two cryptocurrencies, BTC and ETH, would not be a wise decision. 
 
 ![prices overlapped](./images/merged.png)
+
+```python
+btceth_returns = merged_BTCETH.pct_change()
+btceth_returns.head()
+```
+
+| Date       | BTCUSD    | ETHUSD   | BTC_norm  | ETH_norm |
+|------------|-----------|----------|-----------|----------|
+| 2016-10-14 | NaN       | NaN      | NaN       | NaN      |
+| 2016-10-15 | 0.000204  | 0.002517 | 0.000204  | 0.002517 |
+| 2016-10-16 | 0.005892  | 0.000000 | 0.005892  | 0.000000 |
+| 2016-10-17 | -0.003676 | 0.000837 | -0.003676 | 0.000837 |
+| 2016-10-18 | -0.006958 | 0.048495 | -0.006958 | 0.048495 |
+
 
 ### Are investors picking BTC over ETH? 
 
