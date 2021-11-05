@@ -13,13 +13,17 @@ Our group looked to see if there is a correlation between Bitcoin(BTC/USD) and E
 
 Our groups data has shown a close correlation between BTC and ETH. One that the data points to have started in late 2017.
 
+<font color='red'>Etherium</font>
+
+<font color='blue'>BTC</font>
+
 ![prices](./images/BTCETH.png) 
 
 ### Can I diversify between just these two cryptocurrencies? 
 
 All investors should note that our data shows that trying to diversify your crypto investments between just these two cryptocurrencies, BTC and ETH, would not be a wise decision. 
 
-![prices](./images/merged.png)
+![prices overlapped](./images/merged.png)
 
 ### Are investors picking BTC over ETH? 
 
